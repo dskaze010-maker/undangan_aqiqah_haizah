@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Tasyakuran & Aqiqah - Hafizah Naqiyyah Almahyra</title>
+    <!-- Open Graph / Preview WhatsApp -->
+    <meta property="og:title" content="Undangan Tasyakuran & Aqiqah - Hafizah Naqiyyah Almahyra">
+    <meta property="og:description" content="Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.">
+    <meta property="og:image" content="https://dskaze010-maker.github.io/undangan-aqiqah-hafizah/FotoBayi1.jpg">
+    <meta property="og:url" content="https://dskaze010-maker.github.io/undangan-aqiqah-hafizah/">
+    <meta property="og:type" content="website">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome buat Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --pink-primary: #ffb6c1;
+            --pink-light: #fff0f3;
+            --pink-dark: #d87093;
+            --pink-accent: #ff69b4;
+            --text-color: #5a4a4a;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--pink-light);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: var(--white);
+            box-shadow: 0 0 20px rgba(216, 112, 147, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        @media(min-width: 481px) {
+            .container {
+                border-radius: 20px;
+                margin: 20px 0;
+            }
+        }
+
+        .section {
+            padding: 40px 25px;
+            text-align: center;
+            position: relative;
+            background: linear-gradient(135deg, #fff0f3 0%, #ffe4e6 100%);
+            border-bottom: 2px dashed #ffb6c1;
+            /* Efek Animasi Muncul Saat Halaman Dibuka */
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .arabic {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--pink-dark);
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 42px;
+            color: var(--pink-dark);
+            margin: 15px 0;
+        }
+
+        h2 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 38px;
+            color: var(--pink-dark);
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .photo-frame {
+            width: 180px;
+            height: 180px;
+            margin: 20px auto;
+            border-radius: 50%;
+            border: 5px solid var(--white);
+            box-shadow: 0 8px 20px rgba(255, 182, 193, 0.5);
+            overflow: hidden;
+            background-color: var(--pink-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .parents-name {
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--pink-dark);
+            margin-top: 10px;
+        }
+
+        /* Countdown Timer Styling */
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .countdown-box {
+            background: var(--white);
+            padding: 12px 10px;
+            border-radius: 12px;
+            min-width: 65px;
+            box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+            border: 1px solid #ffccd5;
+        }
+
+        .countdown-box span {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--pink-dark);
+        }
+
+        .countdown-box small {
+            font-size: 11px;
+            color: #8c7878;
+        }
+
+        /* Tombol Save Date & Map */
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: var(--pink-dark);
+            color: var(--white);
+            padding: 10px 22px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 10px 0;
+            box-shadow: 0 4px 10px rgba(216, 112, 147, 0.3);
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-action:hover {
+            background-color: var(--pink-accent);
+        }
+
+        .card-info {
+            background: var(--white);
+            margin: 20px 0;
+            padding: 25px 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(255, 182, 193, 0.2);
+            border: 1px solid #ffccd5;
+        }
+
+        .info-item {
+            margin: 15px 0;
+            font-size: 15px;
+        }
+
+        .info-item i {
+            color: var(--pink-accent);
+            margin-right: 8px;
+        }
+
+        .footer {
+            background-color: #fff0f3;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #8c7878;
+        }
+
+        .cute-decor {
+            font-size: 20px;
+            color: var(--pink-accent);
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Elemen Audio (Musik Latar) -->
+<audio id="bgMusic" preload="auto" loop>
+    <source src="Musikkk.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung elemen audio.
+</audio>
+
+<div id="musicToggle" style="position: fixed; bottom: 20px; right: 20px; z-index: 999; background: var(--pink-dark); color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.2); cursor: pointer;">
+    <i id="musicIcon" class="fas fa-music fa-spin"></i>
+</div>
+
+<script src="script.js"></script>
+  
+    <div class="container">
+        <!-- Bagian Pembuka -->
+        <div class="section reveal">
+            <div class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+            <p>Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
+            <p>Al-hamdulillah hilillahi rabbil ‘alamin, puji syukur kami panjatkan kekhadirat Allah SWT atas limpahan rahmat dan karunia-Nya. Telah lahir buah hati tercinta kami:</p>
+            
+            <div class="photo-frame">
+                <img src="FotoBayi1.jpg" alt="Bayi Perempuan">
+            </div>
+
+            <h1>Hafizah Naqiyyah Almahyra</h1>
+            <p class="parents-name">Putri dari Bapak Arianto & Ibu Rindu Suprihatin</p>
+        </div>
+
+        <!-- Bagian Countdown & Undangan Acara -->
+        <div class="section reveal" style="background: var(--white);">
+            <div class="cute-decor"><i class="fas fa-baby-carriage"></i></div>
+            
+            <h2>Aqiqah Penuh Berkah</h2>
+            
+            <!-- Countdown Timer -->
+            <div class="countdown-container" id="countdown">
+                <div class="countdown-box"><span id="days">00</span><small>Hari</small></div>
+                <div class="countdown-box"><span id="hours">00</span><small>Jam</small></div>
+                <div class="countdown-box"><span id="minutes">00</span><small>Menit</small></div>
+                <div class="countdown-box"><span id="seconds">00</span><small>Detik</small></div>
+            </div>
+
+            <!-- Tombol Catat Tanggal ke Kalender HP -->
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Tasyakuran+%26+Aqiqah+Hafizah+Naqiyyah+Almahyra&dates=20261002T123000Z/20261002T160000Z&details=Acara+Tasyakuran+dan+Aqiqah+Hafizah+Naqiyyah+Almahyra+di+Jl.+Kelapa+Puan+RT+006/003+No.+32&location=Jl.+Kelapa+Puan+No.+32" target="_blank" class="btn-action">
+                <i class="fas fa-calendar-check"></i> Catat Tanggalnya
+            </a>
+
+            <p style="margin-top: 20px; text-align: left; font-size: 13px;">
+                Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara aqiqah putri kami, yang insyaAllah akan diselenggarakan pada:
+            </p>
+
+            <div class="card-info">
+                <div class="info-item">
+                    <i class="fas fa-calendar-alt"></i> <strong>Jumat, 2 Oktober 2026</strong><br>
+                    <span style="font-size: 13px; color: #888;">(21 Robiul Akhir 1448 H)</span>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-clock"></i> 19.30 WIB s/d Selesai
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i> <strong>Tempat Acara:</strong><br>
+                    Jl. Kelapa Puan RT 006/003 No. 32
+                </div>
+
+               <a href="https://maps.google.com/maps/search/Jl.%20Klp.%20Hijau%20No.23%2C%20RT.6%2FRW.3%2C%20Jagakarsa%2C%20Kec.%20Jagakarsa%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012620%2C%20Indonesia/@-6.327017844217873,106.82801306247711,17z?hl=en" target="_blank" class="btn-action" style="margin-top: 15px;">
+    <i class="fas fa-map"></i> Buka Google Maps
+</a>
+            </div>
+
+            <p style="margin-top: 20px;">Atas kehadiran dan doa'nya, kami ucapkan terima kasih.</p>
+            <p style="font-weight: bold; color: var(--pink-dark);">Wassalamu’alaikum Warahmatullahi Wabarakatuh</p>
+            <p class="parents-name" style="margin-top: 20px;">Hormat kami yang mengundang,<br>Bpk. Arianto & Ibu Rindu Suprihatin</p>
+        </div>
+
+        <!-- Bagian Do'a Untuk Anak Kami -->
+        <div class="section" style="background: var(--white); border-bottom: 2px dashed #ffb6c1;">
+            <div class="cute-decor"><i class="fas fa-dove"></i></div>
+            <h2>Do'a Untuk Anak Kami</h2>
+            
+            <div style="background: var(--pink-light); padding: 20px; border-radius: 15px; margin: 20px 0; border: 1px solid #ffccd5; font-style: italic; font-size: 14px; line-height: 1.8; color: var(--text-color);">
+                "Ya Allah, muliakanlah anak kami, berkahkanlah umurnya, terangilah hatinya, teduhkanlah imannya, perbaikilah amal perbuatannya, lapangkanlah rezekinya, dekatkanlah kepada kebaikan dan jauhkanlah dari keburukan. Aamiin Ya Rabbal Alamiin."
+            </div>
+        </div>
+
+        <!-- Bagian Galeri Foto -->
+        <div class="section">
+            <div class="cute-decor"><i class="fas fa-images"></i></div>
+            <h2>Galeri Foto</h2>
+            <p style="font-size: 13px; color: #888; margin-bottom: 20px;">Momen Indah Hafizah Naqiyyah Almahyra</p>
+
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px;">
+                <div style="border-radius: 12px; overflow: hidden; height: 150px; box-shadow: 0 4px 10px rgba(255,182,193,0.3); border: 2px solid var(--white);">
+                    <img src="FotoBayi2.jpg" alt="Foto 1" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="border-radius: 12px; overflow: hidden; height: 150px; box-shadow: 0 4px 10px rgba(255,182,193,0.3); border: 2px solid var(--white);">
+                    <img src="FotoBayi3.jpg" alt="Foto 2" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="border-radius: 12px; overflow: hidden; height: 150px; box-shadow: 0 4px 10px rgba(255,182,193,0.3); border: 2px solid var(--white);">
+                    <img src="FotoBayi6.jpg" alt="Foto 3" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="border-radius: 12px; overflow: hidden; height: 150px; box-shadow: 0 4px 10px rgba(255,182,193,0.3); border: 2px solid var(--white);">
+                    <img src="FotoBayi4.jpg" alt="Foto 4" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Bagian Hadis Aqiqah -->
+        <div class="section" style="background: var(--white); border-bottom: 2px dashed #ffb6c1;">
+            <div class="cute-decor"><i class="fas fa-book-open"></i></div>
+            
+            <div style="background: var(--pink-light); padding: 20px; border-radius: 15px; margin: 10px 0; border: 1px solid #ffccd5; text-align: left; font-size: 13px; line-height: 1.8; color: var(--text-color);">
+                <p style="margin-bottom: 10px; text-align: justify;">
+                    Dari Amr bin Syu'aib dari ayahnya, dari kakeknya. Ia berkata, Rasulullah SAW bersabda, <em>"Barang siapa berkehendak untuk meng'Aqiqahkan anaknya maka kerjakanlah. Untuk anak laki-laki dua ekor kambing yang sebanding dan untuk anak perempuan satu ekor kambing"</em>
+                </p>
+                <p style="text-align: center; font-weight: bold; color: var(--pink-dark); margin-top: 15px;">
+                    - [ HR. Ahmad juz 2, hal. 604, no. 2725 ] -
+                </p>
+            </div>
+        </div>
+        <!-- Bagian Footer / Kotak Spesial Terakhir -->
+<div style="background: var(--white); padding: 25px 20px; text-align: center; border-top: 2px dashed #ffb6c1;">
+    <div style="background: var(--pink-light); padding: 15px; border-radius: 12px; border: 1px solid #ffccd5; display: inline-block; width: 100%; max-width: 400px; box-shadow: 0 4px 10px rgba(255,182,193,0.15);">
+        <p style="font-size: 13px; color: var(--pink-dark); font-weight: 600; margin-bottom: 5px;">
+            ✨ Special Invitation for ✨
+        </p>
+        <p style="font-size: 15px; font-weight: bold; color: var(--text-color); margin-bottom: 0;">
+            Hafizah Naqiyyah Almahyra
+        </p>
+    </div>
+    <p style="font-size: 10px; color: #aaa; margin-top: 15px; letter-spacing: 1px;">
+        by DEBUT
+    </p>
+</div>
